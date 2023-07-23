@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-grow: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+header .container nav {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header .container nav a, header .container nav h1 {
+    margin: 0 20px;
+    color: #6057A1;
+    font-weight: 400;
+    font-size: 16px;
+    transition: .3s;
+}
+
+header .container nav a:hover, h1:hover{
+    transform: scale(1.1);
+    color: #E8719F
+}
+
+header .container nav h1{
+    color: #E8719F
+}
+
+.section-result{
+    margin-top: 75px;
+    background-image: url("./images/background6.png");
+    background-size: cover;
+}
+
+
+
+.section-result .container .group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-result p{
+    text-align: center;
+    color: #6057A1;
+    font-size: 72px;
+    font-weight: 600;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-result .container .row, .row1, .row2, .row4{
+    height: 85px;
+    width: 640px;
+    border-radius: 20px;
+    border: 5px solid #9F6CAB;;
+    font-weight: 400;
+    font-size: 32px;
+    color: #E8719F;
+    box-sizing: border-box;
+    padding-left: 30px;
+    appearance: none;
+}
+
+.section-result .container .row{
+    background: url(./images/arrow.svg) no-repeat right;
+    background-position-x: calc(100% - 30px);
+    margin-top: 40px;
+}
+
+.section-result .container .row4{
+    background: url(./images/arrow.svg) no-repeat right;
+    background-position-x: calc(100% - 30px);
+}
+
+.section-result .container .group .row1, .row2, .row4{
+    margin-top: 25px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.section-result .container .group .row1::placeholder, .row2::placeholder{
+    color: #E8719F;
+}
+
+.section-result .container .group .row3{
+    height: 525px;
+    width: 2300px;
+    margin-top: 40px;
+    text-align: start;
+    resize: none;
+    font-weight: 400;
+    font-size: 32px;
+    color: #E8719F;
+    border-radius: 20px;
+    border: 5px solid #9F6CAB;;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.section-result .container .group .row3::placeholder{
+    color: #E8719F;
+}
+
+.section-result .container .one .mail{
+    width: 640px;
+    height: 80px;
+    border: 5px solid #9F6CAB;
+    background-color: white;
+    font-size: 32px;
+    font-weight: 400;
+    color: #E8719F;
+    padding-left: 30px;
+    border-radius: 20px;
+}
+
+.section-result .container .one .mail::placeholder{
+    color: #E8719F;
+}
+
+.section-result .container .one{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-result .container .one .two{
+    display: flex;
+    justify-content: space-between
+}
+
+
+.section-result .container .one .mail{
+    margin-top: 40px;
+}
+
+.section-result .container .one h2{
+    font-size: 58px;
+    font-weight: 400;
+    color: #E8719F;
+    height: 120px;
+    width: 518.67px;
+    background-color: white;
+    text-align: center;
+    padding: 24.5px;
+    border: 5px solid #9F6CAB;
+    border-radius: 20px;
+}
+
+.section-result .container .one{
+    margin-top: 80px;
+}
+
+.section-result .container .one .button{
+    height: 130px;
+    width: 500px;
+    background-color: #70B74C;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    transition: .3s;
+    margin-left: 350px;
+    margin-bottom: 100px;
+}
+
+.section-result .container .one .button h5{
+    font-size: 62px;
+    font-weight: 600;
+    color: white;
+    padding-top: 25px;
+}
+
+.section-result .container .one .button:hover{
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+.section-bas{
+    background-color: white;
+    height: 180px;
+}
+
+.section-bas .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-bas .container .left h2{
+    font-size: 24px;
+    font-weight: 400;
+    color: #6057A1;
+}
+
+.section-bas .container .right{
+    font-size: 20px;
+    font-weight: 400;
+    color: #6057A1;
+    display: flex;
+}
+
+.section-bas .container .right .base, .base1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 55px;
+}
+
+.section-bas .container .right .base a{
+    margin-top: 27px;
+    transition: .3s;
+}
+
+.section-bas .container .right .base a:hover{
+    transform: scale(1.1);
+    color: #E8719F;
+    transition: .1s;
+}
+
+.section-bas .container .right .base1{
+    padding-top: 54px;
+    transition: .3s;
+}
+
+.section-bas .container .right .base1 a:hover{
+    transform: scale(1.1);
+    color: #E8719F;
+    transition: .1s;
+}
+
+.section-bas .container .left{
+    margin-top: 51.5px;
+}
+
+.section-bas .container .left .logo{
+    padding-left: 7.25px;
+}
